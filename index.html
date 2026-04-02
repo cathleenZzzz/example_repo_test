@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinch Star Demo</title>
+    <meta
+      name="description"
+      content="A GitHub Pages-ready hand tracking demo: pinch your fingers to create a star between them."
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <div class="panel">
+        <h1>Pinch Star Demo</h1>
+        <p>
+          Allow camera access, then pinch your thumb and index finger together.
+          A star will appear between your fingertips.
+        </p>
+        <button id="startButton" type="button">Start camera</button>
+        <p id="status" class="status">Loading…</p>
+      </div>
+
+      <div class="stage">
+        <video id="webcam" autoplay playsinline muted></video>
+        <canvas id="overlay"></canvas>
+      </div>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
